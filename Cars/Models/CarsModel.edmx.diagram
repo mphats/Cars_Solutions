@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="a1c641202a4b4a1bbf0263bc3d9a9407" Name="Diagram1">
+        <EntityTypeShape EntityType="Car_Rent_SystemModel.Client_dbo" Width="1.5" PointX="2.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Car_Rent_SystemModel.Company_dbo" Width="1.5" PointX="4.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Car_Rent_SystemModel.sysdiagram" Width="1.5" PointX="0.75" PointY="5.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Car_Rent_SystemModel.User" Width="1.5" PointX="6.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Car_Rent_SystemModel.Vehicle" Width="1.5" PointX="6.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Car_Rent_SystemModel.Tb_Order" Width="1.5" PointX="9" PointY="2" />
+        <AssociationConnector Association="Car_Rent_SystemModel.FK__Tb_Order__Client__03F0984C" />
+        <AssociationConnector Association="Car_Rent_SystemModel.FK__Tb_Order__Vehicl__02FC7413" />
+        <EntityTypeShape EntityType="Car_Rent_SystemModel.Admin" Width="1.5" PointX="9" PointY="7.625" />
+        <AssociationConnector Association="Car_Rent_SystemModel.FK__Admin__VehicleID__07C12930" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

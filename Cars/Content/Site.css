@@ -1,0 +1,166 @@
+﻿body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Override the default bootstrap behavior where horizontal description lists 
+   will truncate terms that are too long to fit in the left column 
+*/
+.dl-horizontal dt {
+    white-space: normal;
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+    max-width: 280px;
+}
+
+.navbar-inverse .navbar-toggle:hover,
+.navbar-inverse .navbar-toggle:focus {
+    background-color: #777;
+    border-color: #fff
+}
+/* Header */
+
+.masthead {
+    height: 100vh;
+    background: url('../Images/background.jpg') center center no-repeat fixed;
+    background-size: cover;
+    position: relative;
+}
+
+    .masthead h1 {
+        font-size: 3.5rem;
+        font-weight: bold;
+        color: #fff;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        margin-bottom: 1.5rem;
+    }
+
+    .masthead p {
+        font-size: 1.5rem;
+        color: #fff;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        margin-bottom: 2rem;
+    }
+
+/* Features */
+
+.features-icons {
+    padding-top: 7rem;
+    padding-bottom: 7rem;
+}
+
+    .features-icons h2 {
+        font-size: 3.5rem;
+        font-weight: bold;
+        color: #000;
+        margin-bottom: 3rem;
+    }
+
+.features-icons-item {
+    max-width: 18rem;
+}
+
+    .features-icons-item .features-icons-icon {
+        height: 7rem;
+    }
+
+        .features-icons-item .features-icons-icon i {
+            font-size: 4rem;
+            color: #f4623a;
+        }
+
+    .features-icons-item h3 {
+        font-size: 1.5rem;
+        font-weight: bold;
+        margin-top: 1.5rem;
+        margin-bottom: 0.5rem;
+        color: #000;
+    }
+
+    .features-icons-item p {
+        font-size: 1.25rem;
+        color: #888;
+        margin-bottom: 0;
+    }
+
+/* Button */
+
+.btn-primary {
+    background-color: #f4623a;
+    border-color: #f4623a;
+}
+
+    .btn-primary:hover {
+        background-color: #d64520;
+        border-color: #d64520;
+    }
+
+    .btn-primary:focus, .btn-primary.focus {
+        box-shadow: 0 0 0 0.2rem rgba(244, 98, 58, 0.5);
+    }
+
+    .btn-primary:not(:disabled):not(.disabled):active, .btn-primary:not(:disabled):not(.disabled).active,
+    .show > .btn-primary.dropdown-toggle {
+        background-color: #d64520;
+        border-color: #d64520;
+    }
+
+        .btn-primary:not(:disabled):not(.disabled):active:focus, .btn-primary:not(:disabled):not(.disabled).active:focus,
+        .show > .btn-primary.dropdown-toggle:focus {
+            box-shadow: 0 0 0 0.2rem rgba(244, 98, 58, 0.5);
+        }
+
+/* Media queries */
+
+@media (min-width: 768px) {
+    .masthead {
+        height: 100vh;
+    }
+
+        .masthead h1 {
+            font-size: 5rem;
+            margin-bottom: 2rem;
+        }
+
+        .masthead p {
+            font-size: 2rem;
+            margin-bottom: 2rem;
+        }
+
+    .features-icons {
+        padding-top: 10rem;
+        padding-bottom: 10rem;
+    }
+
+        .features-icons h2 {
+            font-size: 4.5rem;
+            margin-bottom: 5rem;
+        }
+
+    .features-icons-item h3 {
+        font-size: 2rem;
+        margin-top: 2rem;
+    }
+
+    .features-icons-item p {
+        font-size: 1.5rem;
+    }
+    .card-container {
+        transition: transform 0.3s ease-out;
+    }
+
+        .card-container:hover {
+            transform: scale(1.05);
+        }
+}
+

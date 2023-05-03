@@ -1,0 +1,88 @@
+﻿@model Cars.Models.Vehicle
+@{
+    ViewBag.Title = "CreateVehicles";
+    Layout = "~/Views/Shared/AdminLayout.cshtml";
+}
+
+@using (Html.BeginForm("CreateVehicles", "Admin", FormMethod.Post, new { enctype = "multipart/form-data" }))
+{
+    <div class="row">
+        <div class="col-md-4 mb-5"></div>
+        <div class="col-md-4 mb-5">
+            <span class="display-6 fw-bold text-danger text-center mb-5">Add Vehicle</span>
+            @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+            <span class="text-danger">@ViewBag.error</span>
+
+            <div class="form-group">
+                @Html.LabelFor(model => model.Model)
+                @Html.EditorFor(model => model.Model, new { htmlAttributes = new { @class = "form-control", @placeholder = "Model type" } })
+                @Html.ValidationMessageFor(model => model.Model, "", new { @class = "text-danger" })
+            </div>
+
+            <div class="form-group">
+                @Html.LabelFor(model => model.Registration)
+                @Html.EditorFor(model => model.Registration, new { htmlAttributes = new { @class = "form-control", @placeholder = "Registration" } })
+                @Html.ValidationMessageFor(model => model.Registration, "", new { @class = "text-danger" })
+            </div>
+
+            <div class="form-group">
+                @Html.LabelFor(model => model.Color)
+                @Html.EditorFor(model => model.Color, new { htmlAttributes = new { @class = "form-control", @placeholder = "Color" } })
+                @Html.ValidationMessageFor(model => model.Color, "", new { @class = "text-danger" })
+            </div>
+
+            <div class="form-group">
+                @Html.LabelFor(model => model.Capacity)
+                @Html.EditorFor(model => model.Capacity, new { htmlAttributes = new { @class = "form-control", @placeholder = "Capacity", type = "number" } })
+                @Html.ValidationMessageFor(model => model.Capacity, "", new { @class = "text-danger" })
+            </div>
+
+            <div class="form-group">
+                @Html.LabelFor(model => model.Des)
+                @Html.EditorFor(model => model.Des, new { htmlAttributes = new { @class = "form-control", @placeholder = "" } })
+                @Html.ValidationMessageFor(model => model.Des, "", new { @class = "text-danger" })
+            </div>
+
+            <div class="form-group">
+                @Html.LabelFor(model => model.Fuel_type)
+                @Html.EditorFor(model => model.Fuel_type, new { htmlAttributes = new { @class = "form-control", @placeholder = "Fuel type" } })
+                @Html.ValidationMessageFor(model => model.Fuel_type, "", new { @class = "text-danger" })
+            </div>
+
+            <div class="form-group">
+                @Html.LabelFor(model => model.Transmission)
+                @Html.EditorFor(model => model.Transmission, new { htmlAttributes = new { @class = "form-control", @placeholder = "Transmission" } })
+                @Html.ValidationMessageFor(model => model.Transmission, "", new { @class = "text-danger" })
+            </div>
+
+            <div class="form-group">
+                @Html.LabelFor(model => model.Daily_hired_price)
+                @Html.EditorFor(model => model.Daily_hired_price, new { htmlAttributes = new { @class = "form-control", @placeholder = "Daily hired price" } })
+                @Html.ValidationMessageFor(model => model.Daily_hired_price, "", new { @class = "text-danger" })
+            </div>
+
+            <div class="form-group">
+                @Html.LabelFor(model => model.Condition)
+                @Html.EditorFor(model => model.Condition, new { htmlAttributes = new { @class = "form-control", @placeholder = "Condition" } })
+                @Html.ValidationMessageFor(model => model.Condition, "", new { @class = "text-danger" })
+            </div>
+
+            <div class="form-group">
+                <label for="imgfile">Images</label>
+                <input type="file" id="imgfile" name="imgfile" class="form-control" required="required" />
+            </div>
+
+            <div class="form-group">
+                @Html.LabelFor(model => model.Date_added)
+                @Html.EditorFor(model => model.Date_added, new { htmlAttributes = new { @class = "form-control", @placeholder = "Date added" } })
+                @Html.ValidationMessageFor(model => model.Date_added, "", new { @class = "text-danger" })
+            </div>
+
+            <div class="form-group">
+                <button type="submit" class="btn btn-primary">Add</button>
+            </div>
+        </div>
+    </div>
+
+       
+}
